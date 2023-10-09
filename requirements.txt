@@ -1,0 +1,8 @@
+streamlit 
+nltk
+pickle 
+numpy
+webbrowser
+keras
+json 
+random
