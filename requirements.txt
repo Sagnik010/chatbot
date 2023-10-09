@@ -1,7 +1,6 @@
 streamlit 
 nltk
 numpy
-webbrowser
 keras
 json 
 random
