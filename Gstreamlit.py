@@ -77,4 +77,15 @@ if st.button("Send"):
     if(res[0:8]=='https://'):
         webbrowser.open(res)
     st.text("G: " + res)
+    
+from streamlit.components.v1 import html
 
+def open_page(url):
+    open_script= """
+        <script type="text/javascript">
+            window.open('%s', '_blank').focus();
+        </script>
+    """ % (url)
+    html(open_script)
+
+st.button('Open link', on_click=open_page, args=('res'))
