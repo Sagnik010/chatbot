@@ -79,5 +79,8 @@ if st.button("Send"):
     if(res[0:8]=='https://'):
         webbrowser.open(res)
     st.text("G: " + res)
+    
+# Define the URL you want to open
 
-st.button('Open link', on_click=open_page, args=('res'))
+# Display a clickable link that opens the URL when clicked
+st.markdown(f"[Open URL]({res})")
