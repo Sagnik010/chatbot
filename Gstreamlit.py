@@ -80,12 +80,4 @@ if st.button("Send"):
         webbrowser.open(res)
     st.text("G: " + res)
 
-def open_page(url):
-    open_script= """
-        <script type="text/javascript">
-            window.open('%s', '_blank').focus();
-        </script>
-    """ % (url)
-    html(open_script)
-
 st.button('Open link', on_click=open_page, args=('res'))
