@@ -70,6 +70,8 @@ def getResponse(intent):
 # Create a text input box
 user_input = st.text_area("You:", "").strip()
 
+from streamlit.components.v1 import html
+
 # Create a "Send" button
 if st.button("Send"):
     predicted_intent = predict_class(user_input)
@@ -77,8 +79,6 @@ if st.button("Send"):
     if(res[0:8]=='https://'):
         webbrowser.open(res)
     st.text("G: " + res)
-    
-from streamlit.components.v1 import html
 
 def open_page(url):
     open_script= """
