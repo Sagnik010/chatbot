@@ -76,5 +76,5 @@ if st.button("Send"):
     res = getResponse(predicted_intent)
     if(res[0:5]=='https'):
         webbrowser.open(res)
-    st.text(res)
+    
 
