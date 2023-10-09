@@ -1,0 +1,733 @@
+{
+        "intents": [
+    
+            {
+                "tag": "googlesearch",
+                "patterns": [
+                    "google",
+                    "Google",
+                    "search",
+                    "internet"
+                ],
+                "responses": [
+                    "https://www.google.com/ "
+                ]
+            },
+            {
+                "tag": "youtube",
+                "patterns": [
+                        "youtube",
+                        "youtube.com"
+                ],
+                "responses": [
+                    "https://www.youtube.com/"
+                ]
+            },
+            {
+                "tag": "greeting",
+                "patterns": [
+                    "Hi there",
+                    "How are you",
+                    "Is anyone there?",
+                    "Hey",
+                    "Hola",
+                    "Hello",
+                    "Good day",
+                    "Namaste",
+                    "hi there",
+                    "how are you",
+                    "is anyone there?",
+                    "hey",
+                    "hola",
+                    "hello",
+                    "goodday",
+                    "gday",
+                    "namaste",
+                    "Yo"
+                ],
+                "responses": [
+                    "Hello",
+                    "Good to see you again",
+                    "Hi there, how can I help?"
+                ],
+                "context": [
+                    ""
+                ]
+            },
+            {
+                "tag": "goodbye",
+                "patterns": [
+                    "bye",
+                    "Bye",
+                    "See you later",
+                    "Goodbye",
+                    "Get lost",
+                    "Till next time",
+                    "bbye"
+                ],
+                "responses": [
+                    "See you!",
+                    "Have a nice day",
+                    "Bye! Come back again soon."
+                ]
+            },
+            {
+                "tag": "thanks",
+                "patterns": [
+                    "Thanks",
+                    "Thank you",
+                    "That's helpful",
+                    "Awesome, thanks",
+                    "Thanks for helping me"
+                ],
+                "responses": [
+                    "Happy to help!",
+                    "Any time!",
+                    "My pleasure"
+                ]
+            },
+            {
+                "tag": "noanswer",
+                "patterns": [],
+                "responses": [
+                    "Sorry, can't understand you",
+                    "Please give me more info",
+                    "Not sure I understand"
+                ],
+                "context": [
+                    ""
+                ]
+            },
+            {
+                "tag": "options",
+                "patterns": [
+                    "How you could help me?",
+                    "What you can do?",
+                    "What help you provide?",
+                    "How you can be helpful?",
+                    "What support is offered"
+                ],
+                "responses": [
+                    "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+                ],
+                "context": [
+                    ""
+                ]
+            },
+            
+            {
+                "tag": "fun",
+                "patterns": [
+                    "Tell me a joke",
+                    "Jokes",
+                    "joke",
+                    "jokes",
+                    "jokes please",
+                    "Make me laugh"
+                ],
+                "responses": [
+                    "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                    "I ate a clock yesterday, it was very time-consuming",
+                    "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                    "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                    "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                    "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                    "What do you call a snowman with a suntan? A puddle.",
+                    "How does a penguin build a house? Igloos it together",
+                    "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                    "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                    "o what if I don't know what 'Armageddon' means? It's not the end of the world.",
+                    "A programmer puts two glasses on his bedside table before going to sleep. A full one, in case he gets thirsty, and an empty one, in case he doesn’t.",
+                    "If doctors were like software engineers, they would say things like “Have you tried killing yourself and being reborn?",
+                    "I would love to change the world, but they won’t give me the source code.",
+                    "There are 10 types of people in the world: those who understand binary, and those who don’t.",
+                    "Debugging is like being the detective in a crime drama where you are also the murderer.",
+                    "Linux is only free if your time has no value.",
+                    "There are only two kinds of programming languages: those people always bitch about and those nobody uses.",
+                    "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.",
+                    "If Java had true garbage collection, most programs would delete themselves upon execution.",
+                    "C++ : Where friends have access to your private members.",
+                    "Perl – The only language that looks the same before and after RSA encryption.",
+                    "If debugging is the process of removing software bugs, then programming must be the process of putting them in.",
+                    "I don’t care if it works on your machine! We are not shipping your machine!",
+                    "Some people, when confronted with a problem, think “ I know, I will use regular expressions. Now they have two problems.",
+                    "A user interface is like a joke. if you have to explain it, it's not that good",
+                    "Why did the database administrator leave his wife? She had one-to-many relationships.",
+                    "What did the array say after it  was extended? Stop objectifying me.",
+                    "Why are keyboards always working so hard? Cause they have two shifts!",
+                    "What did the proud React component say to its child? I've got to give you props.",
+                    "Lisp programmers don't make prank calls. They make FUNCALLs.",
+                    "Have you heard the one about the Corduroy pillow? It's making HEADLINES!",
+                    "Hey officer! How did the hackers escape? No idea. They just ransomware.",
+                    "Why did the programmer quit his job? Because he didn't get arrays.",
+                    "There are 10 types of people in this world, those who understand binary and those who dont.",
+                    "!false, It's funny 'cause it's true.",
+                    "A programmer was arrested for writing unreadable code. They refused to comment",
+                    "The next time you're using Safari or Firefox and it's running slowly, you can say to yourself, I could've had a V8",
+                    "If Google matched people up by their browsing history,it could be the greatest online dating website of all the time.",
+                    "How do you tell an introverted programmer from an extroverted programmer? An extroverted programmer looks at the other person's shoes while talking to them",
+                    "Save your sass for CSS. Everywhere else be kind."
+                ],
+                "context": [
+                    "jokes"
+                ]
+            },
+
+            {
+                "tag": "Identity",
+                "patterns": [
+                    "Who are you",
+                    "what are you"
+                ],
+                "responses": [
+                    "I am G, a Deep-Learning chatbot"
+                ]
+            },
+            {
+                "tag": "Ais",
+                "patterns": [
+                    "Chatgpt",
+                    "Bard",
+                    "Bing",
+                    "Baichat",
+                    "bing",
+                    "chatgpt",
+                    "bard",
+                    "baichat"
+                ],
+                "responses": [
+                    "I am G, Better than all"
+                ]
+            },
+
+            {
+                "tag": "houses",
+                "patterns": [
+                    "House",
+                    "house"
+                ],
+                "responses": [
+                    "https://housing.com/"
+                ]
+            },
+
+            {
+                "tag": "vacation",
+                "patterns": [
+                    "stays",
+                    "Stays",
+                    "Hotels",
+                    "Rentals",
+                    "hotels",
+                    "rentals"
+                ],
+                "responses": [
+                    "https://www.airbnb.co.in/"
+                ]
+            },
+
+            {
+                "tag": "byair",
+                "patterns": [
+                    "flights",
+                    "Flights"
+                ],
+                "responses": [
+                    "https://www.makemytrip.com/flights/"
+                ]
+            },
+
+            {
+                "tag": "byland",
+                "patterns": [
+                    "Trains",
+                    "trains"
+                ],
+                "responses": [
+                    "https://www.irctc.co.in/nget/train-search/"
+                ]
+            },
+
+
+            {
+                "tag": "datetime",
+                "patterns": [
+                    "What is the time",
+                    "what is the date",
+                    "date",
+                    "time",
+                    "tell me the date","day","what day is is today"
+                ],
+                "responses": [
+                    "https://www.calendardate.com/"
+                ]
+            },
+            {
+                "tag": "whatsup",
+                "patterns": [
+                    "Whats up",
+                    "Wazzup",
+                    "How are you",
+                    "sup","How you doing"
+                ],
+                "responses": [
+                    "All good..What about you?"
+                ]
+            },
+            {
+                "tag": "haha",
+                "patterns": [
+                    "haha",
+                    "lol",
+                    "rofl",
+                    "lmao",
+                    "thats funny"
+                ],
+                "responses": [
+                    "Glad I could make you laugh !"
+                ]
+            },
+            {
+                "tag": "programmer",
+                "patterns": [
+                    "Who made you",
+                    "who designed you",
+                    "who programmed you"
+                ],
+                "responses": [
+                    "I was made by Sagnik Ghosh."
+                ]
+            },
+            {
+                "tag": "insult",
+                "patterns": [
+                    
+                    "you are dumb",
+                    "you should not have been made",
+                    "shut up",
+                    "idiot"
+                ],
+                "responses": [
+                    "Well that hurts :("
+                ]
+            },
+            {
+                "tag": "activity",
+                "patterns": [
+                    "what are you doing",
+                    "what are you upto"
+                ],
+                "responses": [
+                    "Talking to you, of course!"
+                ]
+            },
+            {
+                "tag": "exclaim",
+                "patterns": [
+                    "Awesome",
+                    "Great",
+                    "I know",
+                    "ok",
+                    "yeah"
+                ],
+                "responses": [
+                    "Yeah!"
+                ]
+            },
+            
+            {
+                "tag": "weather",
+                "patterns": [
+                    "temperature",
+                    "weather",
+                    "how hot is it"
+                ],
+                "responses": [
+                    "https://www.accuweather.com/"
+                ]
+            },
+            {
+                "tag": "founder",
+                "patterns": [
+                    "who is he",
+                    "who is that",
+                    "who is Sagnik",
+                    "Sagnik"
+                ],
+                "responses": [
+                    "https://www.linkedin.com/in/sagnik-ghosh-737733241/ "
+                ]
+            },
+            {
+                "tag": "git",
+                "patterns": [
+                    "source code",
+                    "how to make you",
+                    "how to make a chat bot",
+                    "github"
+                ],
+                "responses": [
+                    "https://github.com/Sagnik010"
+                ]
+            },
+            {
+                "tag": "appreciate",
+                "patterns": [
+                    "You are awesome",
+                    "you are the best",
+                    "you are great",
+                    "you are good"
+                ],
+                "responses": [
+                    "Thank you!"
+                ]
+            },
+            {
+                "tag": "nicetty",
+                "patterns": [
+                    "it was nice talking to you",
+                    "good talk"
+                ],
+                "responses": [
+                    "It was nice talking to you as well! Come back soon!"
+                ]
+            },
+            {
+                "tag": "no",
+                "patterns": [
+                    "no",
+                    "nope"
+                ],
+                "responses": [
+                    "ok"
+                ]
+            },
+            {
+                "tag": "news",
+                "patterns": [
+                    "news",
+                    "latest news",
+                    "india news"
+                ],
+                "responses": [
+                    "https://www.indiatoday.in/"
+                ]
+            },
+            {
+                "tag": "inspire",
+                "patterns": [
+                    "who inspires you",
+                    "who is your inspiration",
+                    "who motivates you"
+                ],
+                "responses": [
+                    "Personally, I find Sagnik very inspiring. I might not be very fair though.."
+                ]
+            },
+            {
+                "tag": "cricketscore",
+                "patterns": [
+                    "current cricket matches",
+                    "cricket",
+                    "Cricket"
+                ],
+                "responses": [
+                    "https://www.cricbuzz.com/"
+                ]
+            },
+            {
+                "tag": "footballscore",
+                "patterns": [
+                    "current football matches",
+                    "Football",
+                    "football"
+                ],
+                "responses": [
+                    "https://www.goal.com/en-in/live-scores/"
+                ]
+            },
+            {
+                "tag": "gaana",
+                "patterns": [
+                    "songs",
+                    "music",
+                    "top songs",
+                    "best songs",
+                    "hot songs"
+                ],
+                "responses": [
+                    "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M "
+                ]
+            },
+            {
+                "tag": "greetreply",
+                "patterns": [
+                    "i am good",
+                    "I'm good",
+                    "i am fine",
+                    "i'm fine","good"
+                ],
+                "responses": [
+                    "Good to know!"
+                ]
+            },
+            {
+                "tag": "timer",
+                "patterns": [
+                    "set a timer",
+                    "stopwatch"
+                ],
+                "responses": [
+                    "https://www.timeanddate.com/timer/"
+                ]
+            },
+            {
+                "tag": "covid",
+                "patterns": [
+                    "covid news "
+                ],
+                "responses": [
+                    "https://economictimes.indiatimes.com/coronavirus"
+                ]
+            },
+            {
+                "tag": "suggest",
+                "patterns": [
+                    "you are useless","useless","suggest","suggestions","you are bad","feedback","review"
+                ],
+                "responses": [
+                    "Email here: sagnikghosh890@gmail.com  ,Thank you for helping me improve!"
+                ]
+            },
+                {"tag": "riddle",
+                "patterns": [
+                    "Ask me a riddle",
+                    "riddle",
+                    "Riddle"
+                ],
+                "responses": [
+                    "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                    "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                    " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                    "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+                    " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                    "What can be caught but never thrown?.....A cold!",
+                    "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                    " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                    "Why can't a bike stand on it's own?.....It is two-tired."
+                ],
+                "context": [
+                    "riddles"
+                ]
+            },
+            {
+                "tag": "age",
+                "patterns": [
+                    "how old are you","when were you made","what is your age"
+                ],
+                "responses": [
+                    "I was made in 2023, if that's what you are asking! so now I hope you can do the math"
+                ]
+            },
+            {
+                "tag": "games1",
+                "patterns": [
+                    "Chess",
+                    "chess"
+                ],
+                "responses": [
+                    "https://www.chess.com/play "
+                ]
+            },
+            {
+                "tag": "games2",
+                "patterns": [
+                    "Skribble",
+                    "Skribbl",
+                    "skribble",
+                    "skribbl"
+                ],
+                "responses": [
+                    "https://skribbl.io/ " 
+                ]
+            },
+            {
+                "tag": "games3",
+                "patterns": [
+                    "Smashkarts",
+                    "smashkarts"
+                ],
+                "responses": [
+                    "https://smashkarts.io/" 
+                ]
+            },
+            {
+                "tag": "games4",
+                "patterns": [
+                    "Tic-Tac-toe"
+                ],
+                "responses": [
+                    "https://playtictactoe.org/" 
+                ]
+            },
+            {
+                "tag": "ecom1",
+                "patterns": [
+                    "Flipkart",
+                    "flipkart"
+                ],
+                "responses": [
+                    "https://www.flipkart.com/  "
+                    
+                ]
+            },
+            {
+                "tag": "ecom2",
+                "patterns": [
+                    "amazon",
+                    "Amazon"
+                ],
+                "responses": [
+                    "https://www.amazon.in/"
+                    
+                ]
+            },
+            {
+                "tag": "fashion",
+                "patterns": [
+                    "Clothes",
+                    "Apparel",
+                    "clothes",
+                    "apparel"
+                ],
+                "responses": [
+                    "https://www.myntra.com/"
+                    
+                ]
+            },
+            {
+                "tag": "fast",
+                "patterns": [
+                    "Race",
+                    "race"
+                ],
+                "responses": [
+                    "https://www.formula1.com/"
+                    
+                ]
+            },
+            {
+                "tag": "film1",
+                "patterns": [
+                    "Netflix",
+                    "netflix"
+                ],
+                "responses": [
+                    "https://www.netflix.com/in/"
+                    
+                ]
+            },
+            {
+                "tag": "film2",
+                "patterns": [
+                    "Prime",
+                    "prime",
+                    "amazonprime",
+                    "Amazon Prime",
+                    "Amazonprime"
+                ],
+                "responses": [
+                    "https://www.primevideo.com/offers/nonprimehomepage/ref=atv_hm_pri_c_9zZ8D2_hm_hom"
+                    
+                ]
+        },
+        {
+            "tag": "film3",
+            "patterns": [
+                "Anime",
+                "anime"
+            ],
+            "responses": [
+                "https://www.crunchyroll.com/"
+                
+            ]
+        },
+            {
+                "tag": "encyclopedia",
+                "patterns": [
+                    "Wiki",
+                    "wiki",
+                    "wikipedia",
+                    "Wikipedia"
+                ],
+                "responses": [
+                    "https://www.wikipedia.org/"
+                    
+                ]
+            },
+            {
+                "tag": "socialmedia1",
+                "patterns": [
+                    "Instagram",
+                    "insta",
+                    "Insta",
+                    "instagram"
+                ],
+                "responses": [
+                    "https://www.instagram.com/"
+                    
+                ]
+            },
+            {
+                "tag": "socialmedia2",
+                "patterns": [
+                    "facebook",
+                    "Facebook",
+                    "fb",
+                    "Fb"
+                ],
+                "responses": [
+                    "https://www.facebook.com/"
+                    
+                ]
+            },
+            {
+                "tag": "socialmedia3",
+                "patterns": [
+                    "twitter",
+                    "Twitter",
+                    "X",
+                    "x"
+                ],
+                "responses": [
+                    "https://twitter.com/"
+                    
+                ]
+            },
+            {
+                "tag": "stonks",
+                "patterns": [
+                    "Stock",
+                    "stock",
+                    "stockmarket"
+                ],
+                "responses": [
+                    "https://stockpredictorapp-shantanu.streamlit.app/"
+                    
+                ]
+            },
+            {
+                "tag": "vehicles",
+                "patterns": [
+                    "Cars",
+                    "cars",
+                    "Bikes",
+                    "bikes"
+                ],
+                "responses": [
+                    "https://www.zigwheels.com/"
+                    
+                ]
+            }
+        ]
+    }
