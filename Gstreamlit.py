@@ -76,6 +76,8 @@ from streamlit.components.v1 import html
 if st.button("Send"):
     predicted_intent = predict_class(user_input)
     res = getResponse(predicted_intent)
+       
     if(res[0:8]=='https://'):
+        webbrowser.open(res)
         st.markdown(f"[Open URL]({res})")
     st.text("G: " + res)
