@@ -2,5 +2,3 @@ streamlit
 nltk
 numpy
 keras
-json 
-random
