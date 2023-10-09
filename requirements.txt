@@ -6,3 +6,4 @@ webbrowser
 keras
 json 
 random
+pickle-mixin
