@@ -74,7 +74,7 @@ user_input = st.text_area("You:", "").strip()
 if st.button("Send"):
     predicted_intent = predict_class(user_input)
     res = getResponse(predicted_intent)
-    if(res[0:5]=='https'):
+    if(res[0:6]=='https'):
         webbrowser.open(res)
-    
+    st.text("G: " + res)
 
