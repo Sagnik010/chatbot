@@ -80,7 +80,6 @@ if st.button("Send"):
         webbrowser.open(res)
     st.text("G: " + res)
     
-# Define the URL you want to open
-
-# Display a clickable link that opens the URL when clicked
-st.markdown(f"[Open URL]({res})")
+    if st.button("Open URL"):
+    # Open the URL in a new browser window/tab
+    webbrowser.open_new_tab(res)
