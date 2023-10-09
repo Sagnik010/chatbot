@@ -79,5 +79,5 @@ if st.button("Send"):
     if(res[0:8]=='https://'):
         webbrowser.open(res)
     st.text("G: " + res)
-    
+    if(res[0:8]=='https://'):
     st.markdown(f"[Open URL]({res})")
