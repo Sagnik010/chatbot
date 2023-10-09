@@ -80,6 +80,4 @@ if st.button("Send"):
         webbrowser.open(res)
     st.text("G: " + res)
     
-if st.button("Open URL"):
-    # Open the URL in a new browser window/tab
-    webbrowser.open_new_tab(res)
+    st.markdown(f"[Open URL]({res})")
