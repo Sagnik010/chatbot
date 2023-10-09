@@ -80,4 +80,4 @@ if st.button("Send"):
         webbrowser.open(res)
     st.text("G: " + res)
     if(res[0:8]=='https://'):
-    st.markdown(f"[Open URL]({res})")
+        st.markdown(f"[Open URL]({res})")
